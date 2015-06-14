@@ -1,0 +1,15 @@
+Reminders
+=========
+
+* If you installed either ``Wildfire`` or ``Doctrine``, there's no need to specify it as option in the specified command. You can specify an option, either ``--wildfire`` or ``--doctrine``, if both components were installed in the specified library.
+
+* If you want to learn more about Doctrine's functionalities, just go head to their `documentation`_ page.
+
+* Before generating the models, views, and controllers, please make sure that you **set up your database** (foreign keys, indexes, relationships, normalizations) properly in order to minimize the modifications after the codes has been generated. Also, generate the models, views, and controllers first to tables that are having **no relationship with other tables** in the database.
+
+	* *The reason for this is that Combustor will generate controllers, models, and views based on your specified database schema. If there's something wrong in your database, definitely Combustor will generated a bad codebase.*
+
+* Have you found a bug? Or do you want to contribute? Feel free to open an issue or create a pull request `here`_!
+
+.. _here: https://github.com/rougin/combustor/issues
+.. _documentation: http://doctrine-orm.readthedocs.org/en/latest/

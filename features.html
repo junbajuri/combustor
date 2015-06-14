@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Combustor &mdash; Combustor 0.0.1 documentation</title>
+  <title>Features &mdash; Combustor 0.0.1 documentation</title>
   
 
   
@@ -30,8 +30,9 @@
   
 
   
-    <link rel="top" title="Combustor 0.0.1 documentation" href="#"/>
-        <link rel="next" title="Introduction" href="introduction.html"/> 
+    <link rel="top" title="Combustor 0.0.1 documentation" href="index.html"/>
+        <link rel="next" title="Commands" href="commands.html"/>
+        <link rel="prev" title="Installation" href="installation.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -48,7 +49,7 @@
         
 
         
-          <a href="#" class="icon icon-home"> Combustor
+          <a href="index.html" class="icon icon-home"> Combustor
         
 
         
@@ -70,10 +71,10 @@
         
           
           
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="commands.html#create-layout">create:layout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="commands.html#create-controller">create:controller</a></li>
@@ -82,13 +83,12 @@
 <li class="toctree-l2"><a class="reference internal" href="commands.html#create-scaffold">create:scaffold</a></li>
 <li class="toctree-l2"><a class="reference internal" href="commands.html#methods">Methods</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="commands.html#deleting-specified-row-s">Deleting specified row/s</a></li>
-<li class="toctree-l3"><a class="reference internal" href="commands.html#finding-specified-row">Finding specified row</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commands.html#finding-specified-row-s">Finding specified row/s</a></li>
 <li class="toctree-l3"><a class="reference internal" href="commands.html#retrieving-all-data">Retrieving all data</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="reminders.html">Reminders</a></li>
 </ul>
 
           
@@ -102,7 +102,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">Combustor</a>
+        <a href="index.html">Combustor</a>
       </nav>
 
 
@@ -111,9 +111,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Combustor</li>
+    <li>Features</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -124,40 +124,36 @@
 </div>
           <div role="main" class="document">
             
-  <div class="section" id="combustor">
-<h1>Combustor<a class="headerlink" href="#combustor" title="Permalink to this headline">¶</a></h1>
-</div>
-<div class="section" id="contents">
-<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <div class="section" id="features">
+<h1>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h1>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
-<li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="commands.html#create-layout">create:layout</a></li>
-<li class="toctree-l2"><a class="reference internal" href="commands.html#create-controller">create:controller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="commands.html#create-model">create:model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="commands.html#create-view">create:view</a></li>
-<li class="toctree-l2"><a class="reference internal" href="commands.html#create-scaffold">create:scaffold</a></li>
-<li class="toctree-l2"><a class="reference internal" href="commands.html#methods">Methods</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="commands.html#deleting-specified-row-s">Deleting specified row/s</a></li>
-<li class="toctree-l3"><a class="reference internal" href="commands.html#finding-specified-row">Finding specified row</a></li>
-<li class="toctree-l3"><a class="reference internal" href="commands.html#retrieving-all-data">Retrieving all data</a></li>
+<li><p class="first">Generates a <a class="reference external" href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> interface based on the specified table.</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Optionally, it can also generate a CRUD interface with <a class="reference external" href="http://www.getbootstrap.com">Bootstrap</a> classes and tags.</p>
+</li>
+<li><p class="first">It can also generate specific code on the following fields:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">`gender`</span></code> - Generates a <code class="docutils literal"><span class="pre">`form_dropdown()`</span></code> with an array of &#8220;male&#8221; and &#8220;female&#8221; values</li>
+<li><code class="docutils literal"><span class="pre">`password`</span></code> - Generates a new and confirm password fields on <code class="docutils literal"><span class="pre">`create.php`</span></code>, while it also generates current, new, and confirm password fields on <code class="docutils literal"><span class="pre">`edit.php`</span></code></li>
 </ul>
+</div></blockquote>
+</li>
+<li><p class="first">Searching data within the table is also integrated. To enable it, just include the following code:</p>
+<div class="highlight-python"><div class="highlight"><pre>&lt;?php echo form_open($this-&gt;uri-&gt;segment(1), array(&#39;method&#39; =&gt; &#39;GET&#39;, &#39;class&#39; =&gt; &#39;&#39;, &#39;role&#39; =&gt; &#39;Search&#39;)); ?&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+                &lt;?php echo form_input(&#39;keyword&#39;, $this-&gt;input-&gt;get(&#39;keyword&#39;), &#39;class=&quot;&quot; placeholder=&quot;Search&quot;&#39;); ?&gt;
+        &lt;/div&gt;
+&lt;?php echo form_close(); ?&gt;
+</pre></div>
+</div>
 </li>
 </ul>
+</div></blockquote>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="reminders.html">Reminders</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+<li><p class="first">Can integrate <a class="reference external" href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/">Doctrine ORM</a> or <strong>Wildfire</strong>, my implementation of a design pattern that is based from this <a class="reference external" href="http://www.revillweb.com/tutorials/codeigniter-tutorial-learn-codeigniter-in-40-minutes/">article</a>.</p>
+</li>
 </ul>
 </div>
 
@@ -167,8 +163,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="commands.html" class="btn btn-neutral float-right" title="Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="installation.html" class="btn btn-neutral" title="Installation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
