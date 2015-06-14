@@ -1,8 +1,10 @@
 Combustor
 =========
 
-Contents
-========
+A tool for speeding up web development in CodeIgniter
+
+Table Of Contents
+=================
 
 .. toctree::
    :maxdepth: 3
@@ -12,11 +14,3 @@ Contents
    features
    commands
    reminders
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

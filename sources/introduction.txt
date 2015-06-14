@@ -1,4 +1,0 @@
-Introduction
-============
-
-Combustor is a tool I made for speeding up web development in CodeIgniter. The reason I created this library before is that I'm too lazy creating basic CRUD code again, and again and again using CodeIgniter. And also I don't really like to create a command-line based application using the controllers and the ``index.php``. I've also want to make a command line interface for CodeIgniter to make it easy to access among the developers.

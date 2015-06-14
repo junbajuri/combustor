@@ -11,13 +11,13 @@ Features
 
 		* ```password``` - Generates a new and confirm password fields on ```create.php```, while it also generates current, new, and confirm password fields on ```edit.php```
 
-	* Searching data within the table is also integrated. To enable it, just include the following code::
+* Searching data within the table is also integrated. To enable it, just include the following code::
 
-		<?php echo form_open($this->uri->segment(1), array('method' => 'GET', 'class' => '', 'role' => 'Search')); ?>
-			<div class="form-group">
-				<?php echo form_input('keyword', $this->input->get('keyword'), 'class="" placeholder="Search"'); ?>
-			</div>
-		<?php echo form_close(); ?>
+	<?php echo form_open($this->uri->segment(1), array('method' => 'GET', 'class' => '', 'role' => 'Search')); ?>
+	    <div class="form-group">
+	        <?php echo form_input('keyword', $this->input->get('keyword'), 'class="" placeholder="Search"'); ?>
+	    </div>
+	<?php echo form_close(); ?>
 
 * Can integrate `Doctrine ORM`_ or **Wildfire**, my implementation of a design pattern that is based from this `article`_.
 

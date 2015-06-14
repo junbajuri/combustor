@@ -141,17 +141,17 @@
 </ul>
 </div></blockquote>
 </li>
+</ul>
+</div></blockquote>
+</li>
 <li><p class="first">Searching data within the table is also integrated. To enable it, just include the following code:</p>
 <div class="highlight-python"><div class="highlight"><pre>&lt;?php echo form_open($this-&gt;uri-&gt;segment(1), array(&#39;method&#39; =&gt; &#39;GET&#39;, &#39;class&#39; =&gt; &#39;&#39;, &#39;role&#39; =&gt; &#39;Search&#39;)); ?&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-                &lt;?php echo form_input(&#39;keyword&#39;, $this-&gt;input-&gt;get(&#39;keyword&#39;), &#39;class=&quot;&quot; placeholder=&quot;Search&quot;&#39;); ?&gt;
-        &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;?php echo form_input(&#39;keyword&#39;, $this-&gt;input-&gt;get(&#39;keyword&#39;), &#39;class=&quot;&quot; placeholder=&quot;Search&quot;&#39;); ?&gt;
+    &lt;/div&gt;
 &lt;?php echo form_close(); ?&gt;
 </pre></div>
 </div>
-</li>
-</ul>
-</div></blockquote>
 </li>
 <li><p class="first">Can integrate <a class="reference external" href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/">Doctrine ORM</a> or <strong>Wildfire</strong>, my implementation of a design pattern that is based from this <a class="reference external" href="http://www.revillweb.com/tutorials/codeigniter-tutorial-learn-codeigniter-in-40-minutes/">article</a>.</p>
 </li>
