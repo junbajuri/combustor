@@ -125,23 +125,21 @@
             
   <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<ol class="arabic">
-<li><p class="first">Download CodeIgniter <a class="reference external" href="https://github.com/bcit-ci/CodeIgniter/archive/3.0.0.zip">here</a> and extract it to your web server.</p>
-</li>
-<li><p class="first">Configure the database connectivity settings in <strong>application/config/database.php</strong>.</p>
-</li>
-<li><p class="first">Install <strong>Combustor</strong> through <a class="reference external" href="https://getcomposer.org/">Composer</a>:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ composer require rougin/combustor --dev
-</pre></div>
-</div>
-</li>
-<li><p class="first">Choose if you want to install <strong>Wildfire</strong> or <strong>Doctrine ORM</strong> or both:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ php vendor/bin/combustor install:wildfire
-$ php vendor/bin/combustor install:doctrine
-</pre></div>
-</div>
-</li>
+<ol class="arabic simple">
+<li>Download CodeIgniter <a class="reference external" href="https://github.com/bcit-ci/CodeIgniter/archive/3.0.5.zip">here</a> and extract it to your web server.</li>
+<li>Configure the database connectivity settings in <strong>application/config/database.php</strong>.</li>
+<li>Install <strong>Combustor</strong> through <a class="reference external" href="https://getcomposer.org/">Composer</a>:</li>
 </ol>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>composer require rougin/combustor --dev
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>Choose if you want to install <strong>Wildfire</strong> or <strong>Doctrine ORM</strong> or both:</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>php vendor/bin/combustor install:wildfire
+<span class="nv">$ </span>php vendor/bin/combustor install:doctrine
+</pre></div>
+</div>
 </div>
 
 

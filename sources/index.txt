@@ -1,7 +1,7 @@
 Combustor
 =========
 
-A tool for speeding up workflow in CodeIgniter.
+Lets you generate controllers, models, and views from database tables for `CodeIgniter`_.
 
 Table Of Contents
 =================
@@ -12,3 +12,5 @@ Table Of Contents
    installation
    commands
    reminders
+
+.. _CodeIgniter: https://codeigniter.com

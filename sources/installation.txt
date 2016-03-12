@@ -1,0 +1,22 @@
+Installation
+============
+
+1. Download CodeIgniter `here`_ and extract it to your web server.
+
+2. Configure the database connectivity settings in **application/config/database.php**.
+
+3. Install **Combustor** through `Composer`_:
+
+.. code-block:: bash
+
+	$ composer require rougin/combustor --dev
+
+4. Choose if you want to install **Wildfire** or **Doctrine ORM** or both:
+
+.. code-block:: bash
+
+	$ php vendor/bin/combustor install:wildfire
+	$ php vendor/bin/combustor install:doctrine
+
+.. _Composer: https://getcomposer.org/
+.. _here: https://github.com/bcit-ci/CodeIgniter/archive/3.0.5.zip

@@ -1,0 +1,186 @@
+Commands
+========
+
+create:layout
+^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	$ php vendor/bin/combustor create:layout --options
+
+Creates a new header and footer file.
+
+**Options:**
+
+* **bootstrap** - Includes the `Bootstrap`_ tags
+
+create:controller
+^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	$ php vendor/bin/combustor create:controller arguments --options
+
+Creates a new controller
+
+**Arguments:**
+
+* **name** - Name of the table
+
+**Options:**
+
+* **camel** - Uses camel case naming convention for the accessor and mutators
+
+* **doctrine** - Generates a controller based on Doctrine
+
+* **keep** - Keeps the name to be used
+
+* **lowercase** - Keeps the first character of the name to lowercase
+
+* **wildfire** - Generates a controller based from Wildfire
+
+create:model
+^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	$ php vendor/bin/combustor create:model arguments --options
+
+Creates a new model
+
+**Arguments:**
+
+* **name** - Name of the table
+
+**Options:**
+
+* **camel** - Uses the camel case naming convention for the accessor and mutators
+
+* **doctrine** - Generates a model based from Doctrine
+
+* **keep** - Keeps the name to be used
+
+* **lowercase** - Keeps the first character of the name to lowercase
+
+* **wildfire** - Generates a model based from Wildfire
+
+create:view
+^^^^^^^^^^^
+
+.. code-block:: bash
+
+	$ php vendor/bin/combustor create:view arguments --options
+
+Creates a new view
+
+**Arguments:**
+
+* **name** - Name of the table
+
+**Options:**
+
+* **bootstrap** - Includes the `Bootstrap`_ tags
+
+* **camel** - Uses the camel case naming convention for the accessor and mutators
+
+* **doctrine** - Generates a model based from Doctrine
+
+* **keep** - Keeps the name to be used
+
+* **wildfire** - Generates a model based from Wildfire
+
+create:scaffold
+^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	$ php vendor/bin/combustor create:scaffold arguments --options
+
+Creates a new controller, model, and view
+
+**Arguments:**
+
+* **name** - Name of the directory to be included in the ``views`` directory
+
+**Options:**
+
+* **bootstrap** - Include the `Bootstrap`_ tags
+
+* **camel** - Use the camel case naming convention for the accessor and mutators
+
+* **doctrine** - Generate a model based from Doctrine
+
+* **keep** - Keeps the name to be used
+
+* **lowercase** - Keep the first character of the name to lowercase
+
+* **wildfire** - Generate a model based from Wildfire
+
+Methods
+^^^^^^^
+
+Deleting specified row/s
+------------------------
+
+.. code-block:: php
+
+	$this->wildfire->delete($table, $delimiters = []);
+
+Deletes the specified data from storage
+
+**Arguments:**
+
+* **$table** - Name of the table
+
+* **$delimiters** - Delimits the list of rows to be returned
+
+Finding specified row
+---------------------
+
+.. code-block:: php
+
+	$this->wildfire->find($table, $delimiters = []);
+
+Finds the row from the specified ID or with the list of delimiters from the specified table
+
+**Arguments:**
+
+* **$table** - Name of the table
+
+* **$delimiters** - Delimits the list of rows to be returned
+
+Retrieving all data
+-------------------
+
+.. code-block:: php
+
+	$this->wildfire->get_all($table, $delimiters = []);
+	$this->doctrine->get_all($table, $delimiters = []);
+
+Returns all rows from the specified table
+
+**Arguments:**
+
+* **$table** - Name of the table
+
+* **$delimiters** - Delimits the list of rows to be returned
+
+	* The optional indexes are:
+
+		* **$delimiters['keyword']** - Used for searching the data from the storage
+
+		* **$delimiters['per_page']** - Displays the number of rows per page
+
+**Returned values:**
+
+	* **->as_dropdown($description)** - Returns the list of rows that can be used in **form_dropdown()**
+
+		* **$description** - The field to be display in the dropdown
+
+			* The default value is **description**
+
+	* **->result()** - Returns the list of rows from the storage
+
+	* **->total_rows()** - Returns the number of rows from the result
+
+.. _Bootstrap: http://getbootstrap.com
